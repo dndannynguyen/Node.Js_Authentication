@@ -1,0 +1,11 @@
+<li>
+    <h2><%= user.name %> (<%= user.type %>)</h2>
+            <form action="/adminPremote" method="POST">
+                <input type="hidden" name="id" value="<%= user._id %>">
+                <button type="submit" class="btn btn-info">Premote</button>
+            </form>
+            <form action="/adminDemote" method="POST">
+                <input type="hidden" name="id" value="<%= user._id %>">
+                <button type="submit" class="btn btn-danger">Demote</button>
+            </form>
+</li>

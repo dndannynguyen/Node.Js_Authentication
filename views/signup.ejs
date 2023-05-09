@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+    <div class="container text-center">
+        <form class="form-signin" action='/signupSubmit' method='post'>
+            <h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
+            <input name="name" type="text" id="inputName" class="form-control" placeholder="Name" required=""
+                autofocus="">
+            <input name="email" type="text" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                autofocus="">
+            <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password"
+                required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </div>
+
+<%- include("templates/footer") %>

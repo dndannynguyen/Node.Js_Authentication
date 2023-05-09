@@ -1,0 +1,12 @@
+<%- include("templates/header") %>
+    <div class="container">
+        <h1>Welcome, <%= user %>!</h1>
+        <div class="photo-container row">
+            <img src="pic1.png" class="col-sm-4 my-1">
+            <img src="pic2.png" class="col-sm-4 my-1">
+            <img src="pic3.png" class="col-sm-4 my-1">
+        </div>
+        <br>
+        <button onclick="window.location.href='/logout'" class="btn btn-danger text-dark">Log out</button>
+    </div>
+<%- include("templates/footer") %>
